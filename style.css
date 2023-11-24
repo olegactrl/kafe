@@ -1,0 +1,234 @@
+/*General Stlyles*/
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    background-color: #FFEAD7;
+}
+a{
+    text-decoration: none;
+}
+ul, ol, li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+/*==================================*/
+html, body{
+    height: 100%;
+}
+body{
+    line-height: 1;
+    font-family: Manrope;
+    color: #000;
+}
+/*==================================*/
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-weight: 400;
+    font-size: 26px;
+    line-height: normal;
+}
+.title_center{
+    text-align: center;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 700;
+    color: inherit;
+}
+/*==================================*/
+.main{
+    flex: 1 1 auto;
+}
+[class*="__container"]{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+/*==================================*/
+@media(max-width: 1200px){
+    [class*="__container"]{
+        max-width: 970px;
+    }
+}
+@media(max-width: 991px){
+    [class*="__container"]{
+        max-width: 750px;
+    }
+}
+@media(max-width: 768px){
+    [class*="__container"]{
+        max-width: none;
+    }
+}
+/*==================================*/
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    min-height: 93px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 15px;
+}
+.header__logo{
+    font-size: 23px;
+    font-weight: 800;
+    color: inherit;
+}
+.header__menu{}
+/*==================================*/
+.menu{}
+.menu__list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 56px;
+    row-gap: 5px;
+}
+.menu__item{}
+.menu__link{
+    font-size: 16px;
+    font-weight: 700;
+    color: inherit;
+}
+.menu__link:hover{
+    text-decoration: underline;
+}
+/*==================================*/
+.page__main{}
+.main-block{
+    
+}
+.main-block__container{
+    padding-top: 168px;
+    position: relative;
+}
+.main-block__container::after{
+    background: #806959;
+    content: "";
+    position: absolute;
+    width: 200%;
+    top: 0;
+    left: 65%;
+    height: 100%; 
+}
+.main-block__body{
+    
+}
+.body-main-block{
+    display: flex;
+}
+.body-main-block__content{
+    flex: 0 1 50%;
+}
+.content-main-block{}
+.content-main-block__body{
+    padding-right: 80px;
+}
+.content-main-block__title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #806959;
+    letter-spacing: 0.1em;
+}
+.content-main-block__text{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.special{
+    color: #fa0404;
+}
+/*==================================*/
+/*==================================*/
+.page__recepies{}
+.recepies{
+    padding-top: 150px;
+}
+.recepies__container{}
+.receppies__title{}
+.recepies__items{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 200px));
+    gap: 94px;
+    justify-content: space-between;
+    padding: 87px 35px;
+}
+.recepies_item{}
+.item-recepies{
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+.item-recepies__icon{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+
+}
+.item-recepies__title{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+    
+}
+.item-recepies__text{
+    font-size: 15px;
+    line-height: normal;
+}
+
+/*==================================*/
+.images__container{
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.33% - 30px));
+    grid-gap: 15px;
+
+}
+.pictures{
+    
+    box-sizing: border-box;
+}
+img {
+    max-width: 360px;
+    max-height: 360px;
+    width: 100%;
+    height: auto;
+}
+
+.feedback__container{
+    text-align: center;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    margin: 400px;
+}
+/*==================================*/
